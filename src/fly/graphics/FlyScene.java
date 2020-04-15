@@ -30,8 +30,9 @@ public class FlyScene
 	}
 
 
+
 	/**
-	 * ÊÍ·Å³¡¾°
+	 * é‡Šæ”¾åœºæ™¯
 	 * */
 	public void Release()
 	{
@@ -40,9 +41,9 @@ public class FlyScene
 	}
 
 	/**
-	 * »ñÈ¡³¡¾°ÊÇ·ñÊÍ·Å
+	 * è·å–åœºæ™¯æ˜¯å¦é‡Šæ”¾
 	 *
-	 * @return Èç¹ûÒÑÊÍ·Å£¬Ôò·µ»Øtrue£¬·ñÔò·µ»Øfalse
+	 * @return å¦‚æœå·²é‡Šæ”¾ï¼Œåˆ™è¿”å›trueï¼Œå¦åˆ™è¿”å›false
 	 * */
 	public boolean IsRelease()
 	{
@@ -51,9 +52,9 @@ public class FlyScene
 
 
 	/**
-	 * »ñÈ¡»­²¼
+	 * è·å–ç”»å¸ƒ
 	 *
-	 * @return ·µ»Ø»­²¼
+	 * @return è¿”å›ç”»å¸ƒ
 	 * */
 	public Canvas GetCanvas()
 	{
@@ -62,7 +63,7 @@ public class FlyScene
 
 
 	/**
-	 * »ñÈ¡äÖÈ¾Æ÷
+	 * è·å–æ¸²æŸ“å™¨
 	 * */
 	public FlyRenderer GetRenderer()
 	{
@@ -72,7 +73,7 @@ public class FlyScene
 
 
 	/**
-	 * ÉèÖÃäÖÈ¾¶¨Ê±Ö´ĞĞÆ÷
+	 * è®¾ç½®æ¸²æŸ“å®šæ—¶æ‰§è¡Œå™¨
 	 * */
 	public void SetRenderTimerExec(int milliseconds, Display display)
 	{
@@ -93,7 +94,7 @@ public class FlyScene
 
 
 	/**
-	 * ÉèÖÃ³¡¾°ÖĞäÖÈ¾Æ÷µÄäÖÈ¾ÊÂ¼ş
+	 * è®¾ç½®åœºæ™¯ä¸­æ¸²æŸ“å™¨çš„æ¸²æŸ“äº‹ä»¶
 	 * */
 	public void SetRenderEvent(Event event)
 	{
@@ -105,7 +106,7 @@ public class FlyScene
 
 
 	/**
-	 * Ìí¼Ó³¡¾°¸Ä±ä´óĞ¡¼àÌıÆ÷
+	 * æ·»åŠ åœºæ™¯æ”¹å˜å¤§å°ç›‘å¬å™¨
 	 * */
 	public void AddResizeListener(Listener listener)
 	{

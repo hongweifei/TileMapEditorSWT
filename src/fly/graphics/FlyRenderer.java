@@ -19,8 +19,9 @@ public class FlyRenderer
 		render_event = new Event(){@Override public void invoke() {}};
 	}
 
+
 	/**
-	 * ÊÍ·ÅäÖÈ¾Æ÷
+	 * é‡Šæ”¾æ¸²æŸ“å™¨
 	 * */
 	public void Release()
 	{
@@ -30,9 +31,9 @@ public class FlyRenderer
 
 
 	/**
-	 * »ñÈ¡äÖÈ¾Æ÷ÊÇ·ñÊÍ·Å
+	 * è·å–æ¸²æŸ“å™¨æ˜¯å¦é‡Šæ”¾
 	 *
-	 * @return Èç¹ûÒÑÊÍ·Å£¬Ôò·µ»Øtrue£¬·ñÔò·µ»Øfalse
+	 * @return å¦‚æœå·²é‡Šæ”¾ï¼Œåˆ™è¿”å›trueï¼Œå¦åˆ™è¿”å›false
 	 * */
 	public boolean IsRelease()
 	{
@@ -42,7 +43,7 @@ public class FlyRenderer
 
 
 	/**
-	 * »ñÈ¡GC
+	 * è·å–GC
 	 * */
 	public GC GetGC()
 	{
@@ -51,9 +52,9 @@ public class FlyRenderer
 
 
 	/**
-	 * ÉèÖÃäÖÈ¾ÊÂ¼ş
+	 * è®¾ç½®æ¸²æŸ“äº‹ä»¶
 	 *
-	 * @param event ÒªÉèÖÃµÄäÖÈ¾ÊÂ¼ş
+	 * @param event è¦è®¾ç½®çš„æ¸²æŸ“äº‹ä»¶
 	 * */
 	public void SetRenderEvent(Event event)
 	{
@@ -62,7 +63,7 @@ public class FlyRenderer
 
 
 	/**
-	 * Ö´ĞĞäÖÈ¾ÊÂ¼ş
+	 * æ‰§è¡Œæ¸²æŸ“äº‹ä»¶
 	 * */
 	public void Render()
 	{
@@ -71,7 +72,7 @@ public class FlyRenderer
 
 
 	/**
-	 * Çå¿ÕÖ¸¶¨ÇøÓò
+	 * æ¸…ç©ºæŒ‡å®šåŒºåŸŸ
 	 * */
 	public void Clear(Point point)
 	{
@@ -81,7 +82,7 @@ public class FlyRenderer
 
 
 	/**
-	 * Çå¿ÕÖ¸¶¨ÇøÓò
+	 * æ¸…ç©ºæŒ‡å®šåŒºåŸŸ
 	 * */
 	public void Clear(int width,int height)
 	{
@@ -91,13 +92,13 @@ public class FlyRenderer
 
 
 	/**
-	 * »æÖÆÏßÌõ
-	 * Ê¹ÓÃÇ°¾°É«ÔÚµã£¨x1£¬y1£©ºÍ£¨x2£¬y2£©Ö®¼ä»æÖÆÒ»ÌõÏß¡£
+	 * ç»˜åˆ¶çº¿æ¡
+	 * ä½¿ç”¨å‰æ™¯è‰²åœ¨ç‚¹ï¼ˆx1ï¼Œy1ï¼‰å’Œï¼ˆx2ï¼Œy2ï¼‰ä¹‹é—´ç»˜åˆ¶ä¸€æ¡çº¿ã€‚
 	 *
-	 * @param x1 »æÖÆµÄµÚÒ»¸öµãµÄºá×ø±ê
-	 * @param y1 »æÖÆµÄµÚÒ»¸öµãµÄ×İ×ø±ê
-	 * @param x2 »æÖÆµÄµÚ¶ş¸öµãµÄºá×ø±ê
-	 * @param y2 »æÖÆµÄµÚ¶ş¸öµãµÄ×İ×ø±ê
+	 * @param x1 ç»˜åˆ¶çš„ç¬¬ä¸€ä¸ªç‚¹çš„æ¨ªåæ ‡
+	 * @param y1 ç»˜åˆ¶çš„ç¬¬ä¸€ä¸ªç‚¹çš„çºµåæ ‡
+	 * @param x2 ç»˜åˆ¶çš„ç¬¬äºŒä¸ªç‚¹çš„æ¨ªåæ ‡
+	 * @param y2 ç»˜åˆ¶çš„ç¬¬äºŒä¸ªç‚¹çš„çºµåæ ‡
 	 * */
 	public void DrawLine(int x1,int y1,int x2,int y2)
 	{
@@ -106,12 +107,12 @@ public class FlyRenderer
 
 
 	/**
-	 * »æÖÆ¾ØĞÎ
+	 * ç»˜åˆ¶çŸ©å½¢
 	 *
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
-	 * @param width »æÖÆ¿í¶È
-	 * @param height »æÖÆ¸ß¶È
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
+	 * @param width ç»˜åˆ¶å®½åº¦
+	 * @param height ç»˜åˆ¶é«˜åº¦
 	 * */
 	public void DrawRect(int x,int y,int width,int height)
 	{
@@ -119,12 +120,12 @@ public class FlyRenderer
 	}
 
 	/**
-	 * »æÖÆ¾ØĞÎ
-	 * Ê¹ÓÃÇ°¾°É«»æÖÆÖ¸¶¨¾ØĞÎµÄÂÖÀª¡£
-	 * ¾ØĞÎµÄ×óÓÒ±ßÔµÎ»ÓÚrect.xºÍrect.x+rect.width´¦¡£
-	 * ¶¥²¿ºÍµ×²¿±ßÔµÎ»ÓÚrect.yºÍrect.y+rect.height¡£
+	 * ç»˜åˆ¶çŸ©å½¢
+	 * ä½¿ç”¨å‰æ™¯è‰²ç»˜åˆ¶æŒ‡å®šçŸ©å½¢çš„è½®å»“ã€‚
+	 * çŸ©å½¢çš„å·¦å³è¾¹ç¼˜ä½äºrect.xå’Œrect.x+rect.widthå¤„ã€‚
+	 * é¡¶éƒ¨å’Œåº•éƒ¨è¾¹ç¼˜ä½äºrect.yå’Œrect.y+rect.heightã€‚
 	 *
-	 * @param rect Òª»æÖÆµÄ¾ØĞÎ
+	 * @param rect è¦ç»˜åˆ¶çš„çŸ©å½¢
 	 * */
 	public void DrawRect(Rectangle rect)
 	{
@@ -132,13 +133,13 @@ public class FlyRenderer
 	}
 
 	/**
-	 * »æÖÆÎÄ±¾
-	 * Ê¹ÓÃ½ÓÊÕÆ÷µÄµ±Ç°×ÖÌåºÍÇ°¾°É«»æÖÆ¸ø¶¨×Ö·û´®¡£½øĞĞÒ³Ç©Õ¹¿ªºÍ»Ø³µ´¦Àí¡£
-	 * »æÖÆÎÄ±¾µÄ¾ØĞÎÇøÓòµÄ±³¾°½«Ìî³ä±³¾°É«¡£
+	 * ç»˜åˆ¶æ–‡æœ¬
+	 * ä½¿ç”¨æ¥æ”¶å™¨çš„å½“å‰å­—ä½“å’Œå‰æ™¯è‰²ç»˜åˆ¶ç»™å®šå­—ç¬¦ä¸²ã€‚è¿›è¡Œé¡µç­¾å±•å¼€å’Œå›è½¦å¤„ç†ã€‚
+	 * ç»˜åˆ¶æ–‡æœ¬çš„çŸ©å½¢åŒºåŸŸçš„èƒŒæ™¯å°†å¡«å……èƒŒæ™¯è‰²ã€‚
 	 *
-	 * @param text Òª»æÖÆµÄÎÄ±¾
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
+	 * @param text è¦ç»˜åˆ¶çš„æ–‡æœ¬
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
 	 * */
 	public void DrawText(String text,int x,int y)
 	{
@@ -147,15 +148,15 @@ public class FlyRenderer
 
 
 	/**
-	 * »æÖÆÎÄ±¾
-	 * Ê¹ÓÃµ±Ç°×ÖÌåºÍÇ°¾°É«»æÖÆ¸ø¶¨×Ö·û´®¡£
-	 * ½øĞĞÒ³Ç©Õ¹¿ªºÍ»Ø³µ´¦Àí¡£Èç¹ûis_transparentÎªtrue£¬
-	 * Ôò²»»áĞŞ¸ÄÕıÔÚ»æÖÆÎÄ±¾µÄ¾ØĞÎÇøÓòµÄ±³¾°£¬·ñÔò½«Ìî³ä±³¾°É«¡£
+	 * ç»˜åˆ¶æ–‡æœ¬
+	 * ä½¿ç”¨å½“å‰å­—ä½“å’Œå‰æ™¯è‰²ç»˜åˆ¶ç»™å®šå­—ç¬¦ä¸²ã€‚
+	 * è¿›è¡Œé¡µç­¾å±•å¼€å’Œå›è½¦å¤„ç†ã€‚å¦‚æœis_transparentä¸ºtrueï¼Œ
+	 * åˆ™ä¸ä¼šä¿®æ”¹æ­£åœ¨ç»˜åˆ¶æ–‡æœ¬çš„çŸ©å½¢åŒºåŸŸçš„èƒŒæ™¯ï¼Œå¦åˆ™å°†å¡«å……èƒŒæ™¯è‰²ã€‚
 	 *
-	 * @param text Òª»æÖÆµÄÎÄ±¾
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
-	 * @param is_transparent Èç¹ûÎªÕæ£¬Ôò±³¾°ÎªÍ¸Ã÷£¬·ñÔòÎª²»Í¸Ã÷
+	 * @param text è¦ç»˜åˆ¶çš„æ–‡æœ¬
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
+	 * @param is_transparent å¦‚æœä¸ºçœŸï¼Œåˆ™èƒŒæ™¯ä¸ºé€æ˜ï¼Œå¦åˆ™ä¸ºä¸é€æ˜
 	 * */
 	public void DrawText(String text,int x,int y,boolean is_transparent)
 	{
@@ -165,10 +166,10 @@ public class FlyRenderer
 
 
 	/**
-	 * »æÖÆÎÄ±¾
-	 * Ê¹ÓÃµ±Ç°×ÖÌåºÍÇ°¾°É«»æÖÆ¸ø¶¨×Ö·û´®¡£
-	 * ¸ù¾İÖ¸¶¨µÄ±êÖ¾Ö´ĞĞÖÆ±í·ûÀ©Õ¹¡¢ĞĞ·Ö¸ô·ûºÍÖú¼Ç·û´¦Àí¡£
-	 * Èç¹û±êÖ¾°üÀ¨DRAW_TRANSPARENT£¬Ôò²»»áĞŞ¸ÄÕıÔÚ»æÖÆÎÄ±¾µÄ¾ØĞÎÇøÓòµÄ±³¾°£¬·ñÔò½«ÓÃ±³¾°É«Ìî³ä
+	 * ç»˜åˆ¶æ–‡æœ¬
+	 * ä½¿ç”¨å½“å‰å­—ä½“å’Œå‰æ™¯è‰²ç»˜åˆ¶ç»™å®šå­—ç¬¦ä¸²ã€‚
+	 * æ ¹æ®æŒ‡å®šçš„æ ‡å¿—æ‰§è¡Œåˆ¶è¡¨ç¬¦æ‰©å±•ã€è¡Œåˆ†éš”ç¬¦å’ŒåŠ©è®°ç¬¦å¤„ç†ã€‚
+	 * å¦‚æœæ ‡å¿—åŒ…æ‹¬DRAW_TRANSPARENTï¼Œåˆ™ä¸ä¼šä¿®æ”¹æ­£åœ¨ç»˜åˆ¶æ–‡æœ¬çš„çŸ©å½¢åŒºåŸŸçš„èƒŒæ™¯ï¼Œå¦åˆ™å°†ç”¨èƒŒæ™¯è‰²å¡«å……
 	 *
 	 * <p>
 	 * The parameter <code>flags</code> may be a combination of:
@@ -184,10 +185,10 @@ public class FlyRenderer
 	 * <dd>transparent background</dd>
 	 * </dl>
 	 *
-	 * @param text Òª»æÖÆµÄÎÄ±¾
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
-	 * @param flags Ö¸¶¨ÈçºÎ´¦ÀíÎÄ±¾µÄ±êÖ¾
+	 * @param text è¦ç»˜åˆ¶çš„æ–‡æœ¬
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
+	 * @param flags æŒ‡å®šå¦‚ä½•å¤„ç†æ–‡æœ¬çš„æ ‡å¿—
 	 * */
 	public void DrawText(String text,int x,int y,int flags)
 	{
@@ -196,12 +197,12 @@ public class FlyRenderer
 
 
 	/**
-	 * Ê¹ÓÃµ±Ç°×ÖÌåºÍÇ°¾°É«»æÖÆ¸ø¶¨×Ö·û´®¡£²»½øĞĞÒ³Ç©À©Õ¹»ò»Ø³µ´¦Àí¡£»æÖÆ×Ö·û´®µÄ¾ØĞÎÇøÓòµÄ±³¾°½«Ìî³ä±³¾°É«¡£
-	 * ÔÚWindowsÉÏ£¬DrawStringºÍDrawTextÂÔÓĞ²»Í¬
+	 * ä½¿ç”¨å½“å‰å­—ä½“å’Œå‰æ™¯è‰²ç»˜åˆ¶ç»™å®šå­—ç¬¦ä¸²ã€‚ä¸è¿›è¡Œé¡µç­¾æ‰©å±•æˆ–å›è½¦å¤„ç†ã€‚ç»˜åˆ¶å­—ç¬¦ä¸²çš„çŸ©å½¢åŒºåŸŸçš„èƒŒæ™¯å°†å¡«å……èƒŒæ™¯è‰²ã€‚
+	 * åœ¨Windowsä¸Šï¼ŒDrawStringå’ŒDrawTextç•¥æœ‰ä¸åŒ
 	 *
-	 * @param str Òª»æÖÆµÄÎÄ±¾
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
+	 * @param str è¦ç»˜åˆ¶çš„æ–‡æœ¬
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
 	 * */
 	public void DrawString(String str,int x,int y)
 	{
@@ -209,12 +210,12 @@ public class FlyRenderer
 	}
 
 	/**
-	 * Ê¹ÓÃµ±Ç°×ÖÌåºÍÇ°¾°É«»æÖÆ¸ø¶¨×Ö·û´®¡£
-	 * ²»½øĞĞÒ³Ç©À©Õ¹»ò»Ø³µ´¦Àí¡£
-	 * Èç¹ûis_transparentÎªtrue£¬Ôò²»»áĞŞ¸Ä»æÖÆ×Ö·û´®µÄ¾ØĞÎÇøÓòµÄ±³¾°£¬·ñÔò½«Ê¹ÓÃ±³¾°É«Ìî³ä¡£
+	 * ä½¿ç”¨å½“å‰å­—ä½“å’Œå‰æ™¯è‰²ç»˜åˆ¶ç»™å®šå­—ç¬¦ä¸²ã€‚
+	 * ä¸è¿›è¡Œé¡µç­¾æ‰©å±•æˆ–å›è½¦å¤„ç†ã€‚
+	 * å¦‚æœis_transparentä¸ºtrueï¼Œåˆ™ä¸ä¼šä¿®æ”¹ç»˜åˆ¶å­—ç¬¦ä¸²çš„çŸ©å½¢åŒºåŸŸçš„èƒŒæ™¯ï¼Œå¦åˆ™å°†ä½¿ç”¨èƒŒæ™¯è‰²å¡«å……ã€‚
 	 *
 	 * <br><br>
-	 * ÔÚWindowsÉÏ£¬drawStringºÍdrawTextÂÔÓĞ²»Í¬£º
+	 * åœ¨Windowsä¸Šï¼ŒdrawStringå’ŒdrawTextç•¥æœ‰ä¸åŒï¼š
 	 *
 	 * <ul>
 	 *     <li>DrawString is faster (depends on string size)
@@ -226,10 +227,10 @@ public class FlyRenderer
 	 *     <li>DrawString doesn't try to find a good fallback font when character doesn't have a glyph in currently selected font</li>
 	 * </ul>
 	 *
-	 * @param str Òª»æÖÆµÄÎÄ±¾
-	 * @param x »æÖÆºá×ø±ê
-	 * @param y »æÖÆ×İ×ø±ê
-	 * @param is_transparent Èç¹ûÎªÕæ£¬Ôò±³¾°ÎªÍ¸Ã÷£¬·ñÔòÎª²»Í¸Ã÷
+	 * @param str è¦ç»˜åˆ¶çš„æ–‡æœ¬
+	 * @param x ç»˜åˆ¶æ¨ªåæ ‡
+	 * @param y ç»˜åˆ¶çºµåæ ‡
+	 * @param is_transparent å¦‚æœä¸ºçœŸï¼Œåˆ™èƒŒæ™¯ä¸ºé€æ˜ï¼Œå¦åˆ™ä¸ºä¸é€æ˜
 	 * */
 	public void DrawString(String str,int x,int y,boolean is_transparent)
 	{
@@ -237,11 +238,11 @@ public class FlyRenderer
 	}
 
 	/**
-	 * ÔÚÖ¸¶¨×ø±ê´¦»æÖÆ¸ø¶¨Í¼Ïñ¡£
+	 * åœ¨æŒ‡å®šåæ ‡å¤„ç»˜åˆ¶ç»™å®šå›¾åƒã€‚
 	 *
-	 * @param image Òª»æÖÆµÄÍ¼Ïñ
-	 * @param x »æÖÆÎ»ÖÃµÄx×ø±ê
-	 * @param y »æÖÆÎ»ÖÃµÄy×ø±ê
+	 * @param image è¦ç»˜åˆ¶çš„å›¾åƒ
+	 * @param x ç»˜åˆ¶ä½ç½®çš„xåæ ‡
+	 * @param y ç»˜åˆ¶ä½ç½®çš„yåæ ‡
 	 * */
 	public void DrawImage(Image image,int x,int y)
 	{
@@ -250,19 +251,19 @@ public class FlyRenderer
 
 
 	/**
-	 * ½«Ô´Í¼ÏñÖĞµÄ¾ØĞÎÇøÓò¸´ÖÆµ½½ÓÊÕÆ÷ÖĞµÄ¾ØĞÎÇøÓò£¨¿ÉÄÜ´óĞ¡²»Í¬£©¡£
-	 * Èç¹ûÔ´ÇøÓòºÍÄ¿±êÇøÓò´óĞ¡²»Í¬£¬ÔòÔÚ¸´ÖÆÔ´ÇøÓòÊ±£¬Ô´ÇøÓò½«±»À­Éì»òÊÕËõÒÔÊÊºÏÄ¿±êÇøÓò¡£
-	 * Èç¹ûÔ´¾ØĞÎµÄÈÎºÎ²¿·ÖÎ»ÓÚÔ´Í¼ÏñµÄ±ß½çÖ®Íâ£¬»òÕßÈç¹ûÈÎºÎ¿í¶È»ò¸ß¶È²ÎÊıÎª¸º£¬Ôò¸´ÖÆÊ§°Ü¡£
+	 * å°†æºå›¾åƒä¸­çš„çŸ©å½¢åŒºåŸŸå¤åˆ¶åˆ°æ¥æ”¶å™¨ä¸­çš„çŸ©å½¢åŒºåŸŸï¼ˆå¯èƒ½å¤§å°ä¸åŒï¼‰ã€‚
+	 * å¦‚æœæºåŒºåŸŸå’Œç›®æ ‡åŒºåŸŸå¤§å°ä¸åŒï¼Œåˆ™åœ¨å¤åˆ¶æºåŒºåŸŸæ—¶ï¼ŒæºåŒºåŸŸå°†è¢«æ‹‰ä¼¸æˆ–æ”¶ç¼©ä»¥é€‚åˆç›®æ ‡åŒºåŸŸã€‚
+	 * å¦‚æœæºçŸ©å½¢çš„ä»»ä½•éƒ¨åˆ†ä½äºæºå›¾åƒçš„è¾¹ç•Œä¹‹å¤–ï¼Œæˆ–è€…å¦‚æœä»»ä½•å®½åº¦æˆ–é«˜åº¦å‚æ•°ä¸ºè´Ÿï¼Œåˆ™å¤åˆ¶å¤±è´¥ã€‚
 	 *
-	 * @param image Òª»æÖÆµÄÍ¼Ïñ
-	 * @param dest_x the x Òª¸´ÖÆµ½µÄÄ¿±êÖĞµÄx×ø±ê
-	 * @param dest_y the y Òª¸´ÖÆµ½µÄÄ¿±êÖĞµÄy×ø±ê
-	 * @param dest_width Ä¿±ê¾ØĞÎµÄ¿í¶È£¨ÒÔµãÎªµ¥Î»£©
-	 * @param dest_height Ä¿±ê¾ØĞÎµÄ¸ß¶È£¨ÒÔµãÎªµ¥Î»£©
-	 * @param src_x Òª´ÓÖĞ¸´ÖÆµÄÔ´Í¼ÏñÖĞµÄx×ø±ê
-	 * @param src_y Òª´ÓÖĞ¸´ÖÆµÄÔ´Í¼ÏñÖĞµÄy×ø±ê
-	 * @param src_width Òª´ÓÔ´¸´ÖÆµÄµãµÄ¿í¶È
-	 * @param src_height Òª´ÓÔ´¸´ÖÆµÄµãµÄ¸ß¶È
+	 * @param image è¦ç»˜åˆ¶çš„å›¾åƒ
+	 * @param dest_x the x è¦å¤åˆ¶åˆ°çš„ç›®æ ‡ä¸­çš„xåæ ‡
+	 * @param dest_y the y è¦å¤åˆ¶åˆ°çš„ç›®æ ‡ä¸­çš„yåæ ‡
+	 * @param dest_width ç›®æ ‡çŸ©å½¢çš„å®½åº¦ï¼ˆä»¥ç‚¹ä¸ºå•ä½ï¼‰
+	 * @param dest_height ç›®æ ‡çŸ©å½¢çš„é«˜åº¦ï¼ˆä»¥ç‚¹ä¸ºå•ä½ï¼‰
+	 * @param src_x è¦ä»ä¸­å¤åˆ¶çš„æºå›¾åƒä¸­çš„xåæ ‡
+	 * @param src_y è¦ä»ä¸­å¤åˆ¶çš„æºå›¾åƒä¸­çš„yåæ ‡
+	 * @param src_width è¦ä»æºå¤åˆ¶çš„ç‚¹çš„å®½åº¦
+	 * @param src_height è¦ä»æºå¤åˆ¶çš„ç‚¹çš„é«˜åº¦
 	 * */
 	public void DrawImage(Image image,int dest_x,int dest_y,
 			int dest_width,int dest_height,int src_x,int src_y,int src_width,int src_height)

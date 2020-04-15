@@ -32,7 +32,6 @@ public class Main
 	    shell.open();
 
 
-	    // 开始事件处理循环，直到用户关闭窗口
 	    while (!shell.isDisposed())
 	    {
 	        if (!display.readAndDispatch())
